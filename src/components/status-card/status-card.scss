@@ -1,0 +1,47 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  width: 600px;
+  margin: auto;
+  &-card {
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: $gray1;
+    border-radius: 10px;
+
+    &-avatar {
+      width: 70%;
+    }
+
+    &-totalButton {
+      width: 30%;
+    }
+  }
+
+  .comment-container {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+  }
+  &-comments {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $gray1;
+    margin: 10px;
+
+    &-comment {
+     margin-left: 2%;
+     padding: 2px;
+    }
+    &-claps {
+      margin-top: 2%;
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+.claps {
+  display: flex;
+  background-color: $gray2;
+  width: 100px;
+  height: 30px;
+  border: solid 1px $gray2;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &-total {
+    font-size: 22px;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+}
