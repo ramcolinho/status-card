@@ -22,9 +22,8 @@ export class AtomsClaps {
   }
 
   render() {
-    const backgroundColor = this.isClick ? '#E8E8E8' : '#F5F5F5';
     return (
-      <div class="claps" style={{ backgroundColor }}
+      <div class="claps"
            onClick={this.onButtonClick.bind(this)}>
         <img class="claps-icon" src={'../assets/icon/claps.png'}/>
         <span class="claps-total">{this.item.claps}</span>

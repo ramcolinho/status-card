@@ -20,7 +20,7 @@ export class AtomsClapsButton {
   }
 
   private calcOpacity() {
-    return `rgba(255,209,0,${this.clapsTotal / 2000}) `;
+    return `rgba(255,209,0,${this.clapsTotal / 1000}) `;
   }
 
   render() {

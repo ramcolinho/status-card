@@ -22,7 +22,7 @@ app.get("/users-comments", async (req, res) => {
       profileImage: `${_IMAGE_URL}?img=${user.id}`,
       comments: commentsData.filter(({ userId }) => +userId === +user.id).map(comments => ({
         ...comments,
-        claps: comments.id * 2,
+        claps: comments.id++,
       })).sort((a, b) => b.claps - a.claps),
       })).map(item => ({
       ...item,
